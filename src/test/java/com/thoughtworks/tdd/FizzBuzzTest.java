@@ -18,4 +18,16 @@ public class FizzBuzzTest {
         // then
         assertThat(word, is("2"));
     }
+
+    @Test
+    public void shouldSayAnotherGivenNumber() throws Exception {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String word = fizzBuzz.say(37);
+
+        // then
+        assertThat(word, is("37"));
+    }
 }
