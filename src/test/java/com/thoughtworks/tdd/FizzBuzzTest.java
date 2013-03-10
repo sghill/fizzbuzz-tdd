@@ -33,4 +33,13 @@ public class FizzBuzzTest {
         // then
         assertThat(word, is("37"));
     }
+
+    @Test
+    public void shouldSayFizzGiven3() throws Exception {
+        // when
+        String word = fizzBuzz.say(3);
+
+        // then
+        assertThat(word, is("fizz"));
+    }
 }
