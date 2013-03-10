@@ -60,4 +60,13 @@ public class FizzBuzzTest {
         // then
         assertThat(word, is("buzz"));
     }
+
+    @Test
+    public void shouldSayBuzzGivenMultipleOf5() throws Exception {
+        // when
+        String word = fizzBuzz.say(40);
+
+        // then
+        assertThat(word, is("buzz"));
+    }
 }
