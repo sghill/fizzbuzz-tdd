@@ -1,5 +1,6 @@
 package com.thoughtworks.tdd;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -7,11 +8,16 @@ import static org.junit.Assert.assertThat;
 
 public class FizzBuzzTest {
 
+    private FizzBuzz fizzBuzz;
+
+    @Before
+    public void setUp() {
+        // given
+        fizzBuzz = new FizzBuzz();
+    }
+
     @Test
     public void shouldSayGivenNumber() throws Exception {
-        // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
         // when
         String word = fizzBuzz.say(2);
 
@@ -21,9 +27,6 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldSayAnotherGivenNumber() throws Exception {
-        // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
         // when
         String word = fizzBuzz.say(37);
 
