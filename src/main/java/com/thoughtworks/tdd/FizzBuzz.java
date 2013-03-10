@@ -2,16 +2,19 @@ package com.thoughtworks.tdd;
 
 public class FizzBuzz {
     public String say(int number) {
-        if(isMultiple(number, 3) && isMultiple(number, 5)) {
-            return "fizzbuzz";
-        }
+        StringBuilder sb = new StringBuilder("");
         if(isMultiple(number, 3)) {
-            return "fizz";
+            sb.append("fizz");
         }
         if(isMultiple(number, 5)) {
-            return "buzz";
+            sb.append("buzz");
         }
-        return String.valueOf(number);
+
+        if(sb.toString().isEmpty()) {
+            return String.valueOf(number);
+        } else {
+            return sb.toString();
+        }
     }
 
     private boolean isMultiple(int number, int divisor) {
