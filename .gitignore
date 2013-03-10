@@ -7,9 +7,11 @@
 
 # gradle files #
 .gradle/
+build/
 
 # intellij files #
 *.ipr
 *.iml
 *.iws
+out/
 
