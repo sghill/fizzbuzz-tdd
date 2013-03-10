@@ -9,12 +9,9 @@ public class FizzBuzz {
         if(isMultiple(number, 5)) {
             sb.append("buzz");
         }
+        String specialWords = sb.toString();
 
-        if(sb.toString().isEmpty()) {
-            return String.valueOf(number);
-        } else {
-            return sb.toString();
-        }
+        return specialWords.isEmpty() ? String.valueOf(number) : specialWords;
     }
 
     private boolean isMultiple(int number, int divisor) {
