@@ -1,0 +1,150 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+  <slide class="title-slide segue nobackground">
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>What is TDD?</h2>
+    </hgroup>
+    <article>
+      <p>Short, iterative cycle: Red-Green-Refactor</p>
+      <ul class="build fade">
+        <li>Write test</li>
+        <li>Watch it fail (red)</li>
+        <li>Make it pass (green)</li>
+        <li>Make it better (refactor)</li>
+        <li>Repeat</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2><b>Why</b> TDD?</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>Get home on time!</li>
+        <li>More confidence</li>
+        <li>Take smaller, more manageable steps</li>
+        <li>Catch defects earlier in the process</li>
+        <li>Create smaller, more focused classes</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup class="auto-fadein">
+      <h2>Demo: FizzBuzz</h2>
+      <br>
+      <p>For numbers 1..100 print the number, unless</p>
+      <br>
+      <ul>
+        <li>divisible by 3, print "fizz"</li>
+        <li>divisible by 5, print "buzz"</li>
+        <li>divisible by both, print "fizzbuzz"</li>
+      </ul>
+    </hgroup>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Common Questions</h2>
+    </hgroup>
+    <article>
+      <ul class="build fade">
+        <li>What to test?</li>
+        <li>How: private methods?</li>
+        <li>How: methods that return void?</li>
+        <li>Can you overtest?</li>
+        <li>Should you depend on the order of tests?</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+    <hgroup>
+      <h2>Tools & More Topics</h2>
+    </hgroup>
+    <article class="bigger">
+      <div class="columns-2">
+        <ul>
+          <li>Java</li>
+          <li>JUnit</li>
+          <li>IntelliJ</li>
+          <li>Gradle</li>
+        </ul>
+        <ul>
+          <li>Theories</li>
+          <li>Mocking</li>
+          <li>BDD</li>
+          <li>Test Pyramid</li>
+          <li>Builders & Test Data Management</li>
+        </ul>
+      </div>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue dark nobackground">
+    <article class="flexbox vleft auto-fadein">
+      <h2>Feedback? Help?</h2>
+      <p>bbiglari@thoughtworks.com</p>
+      <p>twitter: @sghill<br>sghill@thoughtworks.com</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
+
+
